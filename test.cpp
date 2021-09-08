@@ -1,0 +1,23 @@
+#include<stdio.h>
+	int nhap(){
+		int n;
+		do{
+			printf("Nhap n: "); scanf("%d",&n);
+		} while(n<10);
+		return n;
+	}
+	int tongdemuoc(int n){
+		int s=0;
+		for(int i=1; i<=n; i++){
+			if(n%i==0){
+				printf(" %d +",i);
+				s=s+i;
+			} 
+		}
+		printf("\b = %d",s);
+	}
+	int main(){
+		int n;
+		n=nhap();
+		tongdemuoc(n);
+	}
