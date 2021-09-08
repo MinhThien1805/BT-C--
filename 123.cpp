@@ -1,4 +1,5 @@
 #include<stdio.h>
+//Đây là comment
 	int nhap(){
 		int n;
 		do{
